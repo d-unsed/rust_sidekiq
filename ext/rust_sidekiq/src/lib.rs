@@ -24,7 +24,6 @@ methods!(
     }
 );
 
-
 #[no_mangle]
 pub extern fn Init_librust_sidekiq() {
     Class::new("RustSidekiq").define(|itself| {
