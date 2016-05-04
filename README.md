@@ -2,8 +2,7 @@
 
 ## Description
 
-An example of simple sidekiq-compatible server which listens to a queue and performs jobs
-pushed by Sidekiq client.
+An example of simple sidekiq-compatible server which performs Sidekiq jobs.
 
 This server does not require to change any Ruby code, neither
 for pushing jobs to queues nor for using workers.
