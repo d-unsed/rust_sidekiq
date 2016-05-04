@@ -1,0 +1,7 @@
+/.bundle
+
+/ext/rust_sidekiq/target
+/ext/rust_sidekiq/Cargo.lock
+
+.ruby-gemset
+.ruby-version
