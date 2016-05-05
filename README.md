@@ -46,6 +46,12 @@ rust_sidekiq - 0.94 sec (~3.63 times faster)
 
   $ cd ../..
   ```
+  
+  Mac OS X only:
+  
+  ```bash
+  cp ext/rust_sidekiq/target/release/librust_sidekiq.dylib ext/rust_sidekiq/target/release/librust_sidekiq.bundle
+  ```
 
 2. Install `sidekiq` gem
 
