@@ -1,9 +1,7 @@
-use redis::{Client, Commands, Connection, RedisResult};
-use rustc_serialize::Encodable;
+use redis::{Client, Commands, Connection};
 use rustc_serialize::json;
 
-use ruru::{AnyObject, Class, RString};
-use ruru::traits::Object;
+use ruru::{AnyObject, Class, Object, RString};
 
 #[derive(RustcEncodable, RustcDecodable, Debug)]
 struct Job {
@@ -65,7 +63,7 @@ impl SidekiqServer {
         let args: Vec<AnyObject> =
             job.args
                 .iter()
-                .map(|a| RString::new(a).to_any_object())
+                .map(|arg| RString::new(arg).to_any_object())
                 .collect();
 
         // Magic happens here :)

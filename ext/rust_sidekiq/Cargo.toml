@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Dmitry Gritsay <dmitry@vinted.com>"]
 
 [dependencies]
-ruru = "0.7.0"
+ruru = "0.8.0"
 redis = { git = "https://github.com/mitsuhiko/redis-rs.git" }
 rustc-serialize = "0.3.19"
 
